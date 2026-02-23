@@ -34,11 +34,4 @@ describe("getAPIKey", () => {
         const result = getAPIKey(headers);
         expect(result).toBe("valid-api-key");
     });
-
-    test("force fail", () => {
-        const headers = {};
-
-        const result = getAPIKey(headers);
-        expect(result).toBe("valid-api-key");
-    })
 });
